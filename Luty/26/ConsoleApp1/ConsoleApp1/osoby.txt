@@ -1,0 +1,5 @@
+﻿Bartosz;Nowa;42
+Paweł;Kowal;52
+Krystyna;Zrybnika;21
+Andrzej;Zbiór;34
+Alicja;Kolejka;71

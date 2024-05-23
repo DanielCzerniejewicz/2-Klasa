@@ -1,0 +1,6 @@
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Czelendż\Czelendż\bin\Debug\Czelendż.exe
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Czelendż\Czelendż\bin\Debug\Czelendż.pdb
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Czelendż\Czelendż\obj\Debug\Czelendż.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Czelendż\Czelendż\obj\Debug\Czelendż.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Czelendż\Czelendż\obj\Debug\Czelendż.exe
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Czelendż\Czelendż\obj\Debug\Czelendż.pdb

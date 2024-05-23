@@ -1,0 +1,2 @@
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Właściwy SPR\Właściwy SPR\obj\Debug\Właściwy SPR.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\Szkola\2Klasa\POPr\Sprawdziany\Fasady\Właściwy SPR\Właściwy SPR\obj\Debug\Właściwy SPR.csproj.CoreCompileInputs.cache
