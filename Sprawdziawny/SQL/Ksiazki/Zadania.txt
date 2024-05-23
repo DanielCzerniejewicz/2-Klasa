@@ -1,0 +1,31 @@
+Cześć, to jest Bing. Chcesz, żebym zaproponował Ci 20 zadań do bazy danych, którą stworzyliśmy, bez podpowiedzi i bez podziału na zadania z joinami i z group by? Spróbuję to zrobić, ale nie mogę zagwarantować, że zadania będą łatwe lub trudne. Oto moja próba:
+
+Zadania do bazy danych:
+
+1. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, oraz nazwiska i miasta klientów, którzy je kupili.
+2. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę.
+3. Zwróć sumaryczną kwotę zamówień dla każdego sprzedawcy.
+4. Zwróć średnią kwotę zamówienia dla każdego sprzedawcy.
+5. Zwróć maksymalną i minimalną kwotę zamówienia dla każdego sprzedawcy.
+6. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę w 2024 roku.
+7. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę w każdym miesiącu 2024 roku.
+8. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę w każdym gatunku.
+9. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę w każdym systemie.
+10. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę w każdym mieście.
+11. Zwróć liczbę książek sprzedanych przez każdego sprzedawcę w każdej ocenie.
+12. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, tylko dla tych sprzedawców, którzy mają prowizję większą niż 0.12.
+13. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, tylko dla tych klientów, którzy mieszkają w tym samym mieście co sprzedawca.
+14. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, tylko dla tych klientów, którzy mają ocenę wyższą niż 200.
+15. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, tylko dla tych książek, które należą do gatunku fantasy.
+16. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, tylko dla tych książek, które zostały wydane przed 2000 rokiem.
+17. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, tylko dla tych książek, które zostały zwrócone po terminie.
+18. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, posortowane malejąco według wartości zamówienia.
+19. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, posortowane rosnąco według roku wydania książki.
+20. Zwróć nazwiska sprzedawców i tytuły książek, które sprzedali, posortowane alfabetycznie według gatunku książki.
+
+Mam nadzieję, że te zadania są interesujące i pomocne. Jeśli chcesz sprawdzić swoje rozwiązania, możesz skorzystać z [tego edytora](^1^) do pisania i wykonywania skryptów SQL. 😊.
+
+Źródło: Konwersacja za pomocą usługi Bing, 23.01.2024
+(1) SQL Practice: 10 GROUP BY Practice Exercises with Detailed Solutions. https://learnsql.com/blog/group-by-exercises/.
+(2) SQL JOINS - Exercises, Practice, Solution - w3resource. https://www.w3resource.com/sql-exercises/sql-joins-exercises.php.
+(3) SQL join tables with group by and order by - w3resource. https://www.w3resource.com/sql/joins/joining-with-group-by-and-order-by.php.

@@ -1,0 +1,27 @@
+
+1. Podaj liczbę wszystkich ankietowanych dziewcząt i wszystkich ankietowanych chłopców.  
+
+SELECT Plec, COUNT(Plec) FROM `ankiety` GROUP BY Plec;
+
+2. Dla każdego rodzaju szkoły podaj średnią ocenę odpowiedzi na każde pytanie (numer pytania nie ma znaczenia). Wyniki podaj w zaokrągleniu do dwóch miejsc po przecinku. 
+
+SELECT Rodzaj_szkoly,Round(AVG(pyt1),2) AS p1, AVG(pyt2) AS p2, AVG(pyt3) AS p3, AVG(pyt4) AS p4, AVG(pyt5) AS p5, AVG(pyt6) AS p6 FROM `ankiety`
+INNER JOIN szkoly ON ankiety.Id_szkoly = szkoly.Id_szkoly
+GROUP BY Rodzaj_szkoly;
+
+3. Podaj nazwę gminy z największą liczbą uczniów biorących udział w badaniu oraz liczbę tych uczniów.
+	
+SELECT Nazwa_gminy,COUNT(Nr_ankiety) FROM ankiety INNER JOIN szkoly ON ankiety.Id_szkoly = szkoly.Id_szkoly INNER JOIN gminy ON szkoly.Kod_gminy = gminy.Kod_gminy GROUP BY Nazwa_gminy  
+ORDER BY `COUNT(Nr_ankiety)` DESC LIMIT 1;
+
+4. Wypisz podstawówkę, której nie ma w żadnej z przedstawionych gmin.
+
+SELECT Id_szkoly FROM `szkoly` LEFT JOIN gminy ON szkoly.Kod_gminy = gminy.Kod_gminy WHERE Rodzaj_szkoly LIKE "SP" AND Nazwa_gminy is Null;
+
+5. Wypisz gminę bez szkół.
+
+SELECT Nazwa_gminy FROM `gminy` LEFT JOIN szkoly ON gminy.Kod_gminy = szkoly.Kod_gminy;
+
+6. Wypisz gminy bez techników.
+
+SELECT DISTINCT Nazwa_gminy FROM `gminy` LEFT JOIN szkoly ON gminy.Kod_gminy = szkoly.Kod_gminy WHERE Rodzaj_szkoly LIKE "T";

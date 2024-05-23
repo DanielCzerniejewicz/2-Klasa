@@ -1,0 +1,77 @@
+-- Tworzenie bazy danych osoby_przyklad
+CREATE DATABASE osoby_przyklad;
+
+-- Używanie bazy danych osoby_przyklad
+USE osoby_przyklad;
+
+-- Tworzenie tabeli Osoby z kluczem głównym ID
+CREATE TABLE Osoby (
+  ID int,
+  Imie varchar(50),
+  Nazwisko varchar(50),
+  PESEL varchar(11),
+  Data_Urodzenia date,
+  Plec varchar(1),
+  PRIMARY KEY (ID)
+);
+
+-- Tworzenie tabeli Adres z kluczem obcym ID, który odnosi się do tabeli Osoby
+CREATE TABLE Adres (
+  ID int,
+  Ulica varchar(50),
+  Numer_Domu varchar(10),
+  Miasto varchar(50),
+  Gmina varchar(50),
+  Kraj varchar(50),
+  Kod_Pocztowy varchar(10),
+  FOREIGN KEY (ID) REFERENCES Osoby(ID)
+);
+
+-- Tworzenie tabeli Kontakt z kluczem obcym ID, który odnosi się do tabeli Adres
+CREATE TABLE Kontakt (
+  ID int,
+  Ulica varchar(50),
+  Numer_Domu varchar(10),
+  E_mail varchar(50),
+  Numer_Telefonu varchar(15),
+  FOREIGN KEY (ID) REFERENCES Adres(ID)
+);
+
+-- Wstawianie przykładowych danych do tabeli Osoby
+INSERT INTO Osoby (ID, Imie, Nazwisko, PESEL, Data_Urodzenia, Plec) VALUES
+(1, 'Anna', 'Nowak', '90010112345', '1990-01-01', 'K'),
+(2, 'Jan', 'Kowalski', '91020223456', '1991-02-02', 'M'),
+(3, 'Maria', 'Zielińska', '92030334567', '1992-03-03', 'K'),
+(4, 'Piotr', 'Wiśniewski', '93040445678', '1993-04-04', 'M'),
+(5, 'Katarzyna', 'Lewandowska', '94050556789', '1994-05-05', 'K'),
+(6, 'Tomasz', 'Wójcik', '95060667890', '1995-06-06', 'M'),
+(7, 'Agnieszka', 'Kowalczyk', '96070778901', '1996-07-07', 'K'),
+(8, 'Marcin', 'Szewczyk', '97080889012', '1997-08-08', 'M'),
+(9, 'Ewa', 'Dąbrowska', '98090990123', '1998-09-09', 'K'),
+(10, 'Adam', 'Mazur', '99101001234', '1999-10-10', 'M');
+
+-- Wstawianie przykładowych danych do tabeli Adres
+INSERT INTO Adres (ID, Ulica, Numer_Domu, Miasto, Gmina, Kraj, Kod_Pocztowy) VALUES
+(1, 'Słoneczna', '1', 'Warszawa', 'Warszawa', 'Polska', '00-001'),
+(2, 'Zielona', '2', 'Poznań', 'Poznań', 'Polska', '60-002'),
+(3, 'Kwiatowa', '3', 'Kraków', 'Kraków', 'Polska', '30-003'),
+(4, 'Główna', '4', 'Wrocław', 'Wrocław', 'Polska', '50-004'),
+(5, 'Parkowa', '5', 'Gdańsk', 'Gdańsk', 'Polska', '80-005'),
+(6, 'Szkolna', '6', 'Lublin', 'Lublin', 'Polska', '20-006'),
+(7, 'Sportowa', '7', 'Katowice', 'Katowice', 'Polska', '40-007'),
+(8, 'Leśna', '8', 'Szczecin', 'Szczecin', 'Polska', '70-008'),
+(9, 'Piękna', '9', 'Łódź', 'Łódź', 'Polska', '90-009'),
+(10, 'Rynek', '10', 'Toruń', 'Toruń', 'Polska', '87-010');
+
+-- Wstawianie przykładowych danych do tabeli Kontakt
+INSERT INTO Kontakt (ID, Ulica, Numer_Domu, E_mail, Numer_Telefonu) VALUES
+(1, 'Słoneczna', '1', 'anna.nowak@gmail.com', '123456789'),
+(2, 'Zielona', '2', 'jan.kowalski@yahoo.com', '234567890'),
+(3, 'Kwiatowa', '3', 'maria.zielinska@outlook.com', '345678901'),
+(4, 'Główna', '4', 'piotr.wisniewski@interia.pl', '456789012'),
+(5, 'Parkowa', '5', 'katarzyna.lewandowska@wp.pl', '567890123'),
+(6, 'Szkolna', '6', 'tomasz.wojcik@onet.pl', '678901234'),
+(7, 'Sportowa', '7', 'agnieszka.kowalczyk@o2.pl', '789012345'),
+(8, 'Leśna', '8', 'marcin.szewczyk@protonmail.com', '890123456'),
+(9, 'Piękna', '9', 'ewa.dabrowska@icloud.com', '901234567'),
+(10, 'Rynek', '10', 'adam.mazur@bing.com', '012345678');

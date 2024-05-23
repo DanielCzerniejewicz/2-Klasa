@@ -1,0 +1,6 @@
+Zadanie 1: Wyświetl imiona, nazwiska i numery telefonów osób, które mają adres w Warszawie.
+Zadanie 2: Wyświetl imiona, nazwiska i kody pocztowe osób, które mają adres w Polsce.
+Zadanie 3: Wyświetl imiona, nazwiska i e-maile osób, które mają adres w Krakowie lub Szczecinie.
+Zadanie 4: Wyświetl imiona, nazwiska i miasta osób, które mają adres w Polsce lub nie mają adresu.
+Zadanie 5: Wyświetl imiona, nazwiska i ulice osób, które mają adres na tej samej ulicy, co ich kontakt.
+Zadanie 6: Wyświetl liczbę osób w każdym mieście.

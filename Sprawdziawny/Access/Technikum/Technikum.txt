@@ -1,0 +1,20 @@
+Technikum Przyszłości
+Z plików:
+oceny, uczniowie, przedmioty stwórz bazę danych - uczniowie technikum.
+Przy imporcie zwórć uwagę na pole daty. Zauważ, że baza nie ma polskich znaków!!
+
+Zadania:
+
+1. Imiona dziewczyn w zestawieniu kończą się na "a". Podaj klasy, w których ponad 50% uczniów to dziewczyny.
+2. Zrób zestawienie klas IV z ilością uczniów w każdej z klas.
+3. Wypisz wszystkich uczniów co mają coś związanego z Rafałem (imię, nazwisko).
+4. Podaj ilość klas w tym technikum przyszłości.
+5. Oblicz ilość uczniów z nieparzystym ID (to ta część pola Id_ucznia przed slashem)
+
+7. Podaj daty, gdzie wystawiono więcej niż 10 jedynek jednego dnia.
+
+8. Podaj zestawienie imion i nazwisk uczniów z klasy II A, którzy nie otrzymali żadnej oceny z przedmiotu sieci komputerowe.
+
+9. Podaj zestawienie zawierające dla każdego przedmiotu liczbę piątek wystawionych w kolejnych miesiącach od września do grudnia łącznie we wszystkich klasach.
+
+

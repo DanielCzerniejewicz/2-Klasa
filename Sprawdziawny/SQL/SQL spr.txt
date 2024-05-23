@@ -1,0 +1,39 @@
+Wyświetl wszystkich Mateuszów:
+SELECT Ludzie.imie, Ludzie.Nazwisko FROM Ludzie WHERE Ludzie.imie = "Mateusz";
+
+Wyświetl wszystkie osoby, których imię zawiera przynajmniej jedno “r” oraz nazwisko na “z”:
+SELECT Ludzie.imie, Ludzie.Nazwisko FROM Ludzie WHERE Ludzie.imie LIKE "%r%" AND Ludzie.Nazwisko LIKE "%z"
+
+
+Wyświetl wszystkie wycieczki do Hiszpanii z Gdańska:
+SELECT Wycieczki.id_wycieczki FROM Wycieczki WHERE Wycieczki.wylot = "Hiszpania" AND Wycieczki.przylot = "GDAŃSK"
+
+
+Drogie te wycieczki? Jaka jest średnia cena wycieczki?
+SELECT AVG(Wycieczki.Cena) AS ŚredniaWycieczek FROM Wycieczki;
+
+
+Ile osób łącznie zarezerwowało wycieczki (dorośli i dzieci)?
+SELECT SUM(Ludzie.dorosli + Ludzie.dzieci) AS IloscLudzi FROM Ludzie;
+
+SELECT Wycieczki.kraj, Wycieczki.miejsce, Wycieczki.cena
+FROM Wycieczki
+JOIN Ludzie ON Wycieczki.id_osoby = Ludzie.id_osoby
+WHERE Ludzie.imie = 'Ewelina' AND Ludzie.Nazwisko = 'Lagun';
+
+
+Stórz zestawienie ilości wycieczek z podziałem na kraje. Posortuj zestawienie malejąco:
+SELECT Wycieczki.kraj, COUNT(*) AS IloscWycieczek
+FROM Wycieczki
+GROUP BY Wycieczki.kraj
+ORDER BY IloscWycieczek DESC;
+
+Wybierz 3 kraje, gdzie zabierano jak najmniej kalafiorów. Posortuj malejąco po ilości:
+
+
+SELECT Wycieczki.kraj, SUM(Wycieczki.ilosc_kalafiorow) AS IloscKalafiorow
+FROM Wycieczki
+WHERE Wycieczki.kraj IS NOT NULL  -- Możesz dostosować to warunki do rzeczywistej struktury danych
+GROUP BY Wycieczki.kraj
+ORDER BY IloscKalafiorow ASC
+LIMIT 3;

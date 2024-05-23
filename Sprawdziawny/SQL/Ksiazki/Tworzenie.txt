@@ -1,0 +1,35 @@
+-- Tworzę nową bazę danych o nazwie Przyklad
+CREATE DATABASE Ksiegarnia_bing_ai IF NOT EXISTS;
+
+-- Używam bazy danych Przyklad
+USE Ksiegarnia_bing_ai;
+
+-- Tworzę pierwszą tabelę o nazwie Ksiazki
+CREATE TABLE Ksiazki (
+  id INT PRIMARY KEY, -- klucz główny tabeli
+  tytul VARCHAR(100) NOT NULL, -- tytuł książki
+  autor VARCHAR(50) NOT NULL, -- autor książki
+  rok INT NOT NULL, -- rok wydania książki
+  gatunek VARCHAR(20) NOT NULL -- gatunek literacki książki
+);
+
+-- Tworzę drugą tabelę o nazwie Czytelnicy
+CREATE TABLE Czytelnicy (
+  id INT PRIMARY KEY, -- klucz główny tabeli
+  imie VARCHAR(50) NOT NULL, -- imię czytelnika
+  nazwisko VARCHAR(50) NOT NULL, -- nazwisko czytelnika
+  wiek INT NOT NULL, -- wiek czytelnika
+  miasto VARCHAR(50) NOT NULL -- miasto zamieszkania czytelnika
+);
+
+-- Tworzę trzecią tabelę o nazwie Wypozyczenia
+CREATE TABLE Wypozyczenia (
+  id INT PRIMARY KEY, -- klucz główny tabeli
+  id_ksiazki INT NOT NULL, -- klucz obcy odwołujący się do tabeli Ksiazki
+  id_czytelnika INT NOT NULL, -- klucz obcy odwołujący się do tabeli Czytelnicy
+  data_wypozyczenia DATE NOT NULL, -- data wypożyczenia książki
+  data_zwrotu DATE, -- data zwrotu książki
+  -- Definiuję ograniczenia kluczy obcych
+  FOREIGN KEY (id_ksiazki) REFERENCES Ksiazki(id),
+  FOREIGN KEY (id_czytelnika) REFERENCES Czytelnicy(id)
+);
