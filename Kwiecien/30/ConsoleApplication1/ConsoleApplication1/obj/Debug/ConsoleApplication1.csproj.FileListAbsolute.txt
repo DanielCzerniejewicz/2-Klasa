@@ -1,0 +1,6 @@
+C:\Users\Daniel\Desktop\Szkola\2Klasa\Obiektowka\Kwiecien\30\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Daniel\Desktop\Szkola\2Klasa\Obiektowka\Kwiecien\30\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Daniel\Desktop\Szkola\2Klasa\Obiektowka\Kwiecien\30\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\Szkola\2Klasa\Obiektowka\Kwiecien\30\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\Szkola\2Klasa\Obiektowka\Kwiecien\30\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Daniel\Desktop\Szkola\2Klasa\Obiektowka\Kwiecien\30\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
