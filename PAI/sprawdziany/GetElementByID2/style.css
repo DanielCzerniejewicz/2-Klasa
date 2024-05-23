@@ -1,0 +1,13 @@
+#lewo{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+}
+#prawo{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left:50%;
+    background-color: bisque;
+}
